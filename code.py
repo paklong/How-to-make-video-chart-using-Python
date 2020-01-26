@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 
+#Data can be found here: https://ourworldindata.org/grapher/international-tourist-arrivals-by-world-region
 data = pd.read_csv('international-tourist-arrivals-by-world-region.csv', header = 0)
 data = data.rename(columns = {' (arrivals)': 'Arrivals'})
 Year = np.sort(data.Year.unique())
